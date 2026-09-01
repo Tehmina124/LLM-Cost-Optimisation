@@ -1,49 +1,77 @@
 <p align="center">
-  <img src="./LLM.png" width="100%" alt="LLM Cost Optimisation Study Banner">
+  <img src="LLM.png" width="100%" alt="LLM Cost Optimisation Study">
 </p>
 
 <h1 align="center">💰 LLM Cost Optimisation Study</h1>
 
 <p align="center">
-  <b>Reduce LLM costs without materially hurting response quality.</b>
+  <b>Reduce LLM Costs Without Materially Hurting Quality</b>
 </p>
 
 <p align="center">
-  A practical Generative AI study demonstrating prompt compression,
+  A practical Generative AI project demonstrating prompt compression,
   model routing, response caching, token reduction, cost analysis,
   and quality evaluation.
 </p>
 
 <p align="center">
   <a href="https://llm-cost-optimisation-r9jrfo3yrfuuqrxs9e2xhg.streamlit.app/">
-    <img src="https://img.shields.io/badge/🚀%20Live%20Demo-Streamlit-red?style=for-the-badge&logo=streamlit" alt="Live Demo">
+    <img src="https://img.shields.io/badge/🚀%20LIVE%20DEMO-Streamlit-red?style=for-the-badge&logo=streamlit" alt="Live Demo">
   </a>
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python&logoColor=white">
-  <img src="https://img.shields.io/badge/Streamlit-Framework-red?style=for-the-badge&logo=streamlit&logoColor=white">
-  <img src="https://img.shields.io/badge/Ollama-Local%20LLM-black?style=for-the-badge&logo=ollama&logoColor=white">
-  <img src="https://img.shields.io/badge/Pandas-Data%20Analysis-purple?style=for-the-badge&logo=pandas&logoColor=white">
-  <img src="https://img.shields.io/badge/Generative%20AI-LLM-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Streamlit-red?style=for-the-badge&logo=streamlit&logoColor=white">
+  <img src="https://img.shields.io/badge/Ollama-black?style=for-the-badge&logo=ollama&logoColor=white">
+  <img src="https://img.shields.io/badge/Pandas-purple?style=for-the-badge&logo=pandas&logoColor=white">
+  <img src="https://img.shields.io/badge/Generative%20AI-green?style=for-the-badge">
 </p>
 
 ---
 
-# 💰 LLM Cost Optimisation Study
+# 📌 About the Project
 
-## 🎯 Overview
+**LLM Cost Optimisation Study** is a Generative AI project focused on reducing the operational cost of Large Language Model applications while maintaining or improving response quality.
 
-**LLM Cost Optimisation Study** is a Generative AI project that explores practical techniques for reducing the operational cost of Large Language Model applications while maintaining or improving response quality.
+The project compares a traditional **Baseline Implementation** with an **Optimized Implementation**.
 
-The project compares two implementations:
+The optimized approach demonstrates:
 
-* 🔴 **Baseline Implementation** — traditional LLM approach
-* 🟢 **Optimized Implementation** — applies multiple cost-optimization strategies
+* ✂️ Prompt Compression
+* 🤖 Model Routing
+* ⚡ Response Caching
+* 📉 Token Reduction
+* 🎯 Quality Evaluation
+* 💰 Cost Analysis
+* 📊 Cost Comparison
+* 📅 Monthly Cost Projection
 
-The dashboard measures token usage, estimated cost, quality, caching performance, savings, and projected monthly expenses.
+The application provides an interactive **Streamlit dashboard** where users can run experiments and analyze the cost-quality trade-off.
 
-> **Core idea:** LLM optimization is not only about choosing a cheaper model. Effective optimization combines better prompts, intelligent model selection, caching, fewer tokens, and continuous quality evaluation.
+---
+
+# 🎯 Project Goal
+
+The main goal is:
+
+> **Reduce LLM cost without materially reducing response quality.**
+
+Instead of focusing only on using a cheaper model, this project combines several optimization techniques to improve the overall efficiency of an LLM-powered application.
+
+```text
+Better Prompts
+      +
+Smart Model Selection
+      +
+Response Caching
+      +
+Fewer Tokens
+      +
+Quality Evaluation
+      ↓
+Lower Cost + Better Efficiency
+```
 
 ---
 
@@ -51,31 +79,31 @@ The dashboard measures token usage, estimated cost, quality, caching performance
 
 | Feature                  | Description                                              |
 | ------------------------ | -------------------------------------------------------- |
-| ✂️ Prompt Compression    | Removes unnecessary instructions and reduces prompt size |
-| 🤖 Model Routing         | Routes requests according to their complexity            |
+| ✂️ Prompt Compression    | Reduces unnecessary prompt instructions                  |
+| 🤖 Model Routing         | Selects an appropriate model based on request complexity |
 | ⚡ Response Caching       | Reuses responses for repeated questions                  |
-| 📉 Token Reduction       | Measures token savings between implementations           |
-| 🎯 Quality Evaluation    | Compares baseline and optimized response quality         |
-| 💰 Cost Analysis         | Calculates estimated LLM benchmark costs                 |
-| 📊 Cost Comparison       | Compares baseline vs optimized performance               |
-| 📅 Monthly Projection    | Estimates monthly cost and potential savings             |
-| 🏆 Recommendation Engine | Determines whether optimization should be adopted        |
-| 📈 Experiment History    | Tracks optimization experiments during the session       |
-| 📥 CSV Export            | Exports benchmark results for analysis                   |
-| 🦙 Local LLM             | Supports local inference through Ollama                  |
-| ☁️ Streamlit Dashboard   | Interactive web-based analytics interface                |
+| 📉 Token Reduction       | Measures token savings                                   |
+| 🎯 Quality Evaluation    | Compares response quality                                |
+| 💰 Cost Analysis         | Calculates estimated benchmark costs                     |
+| 📊 Cost Comparison       | Compares baseline and optimized implementations          |
+| 📅 Monthly Projection    | Estimates monthly cost and savings                       |
+| 🏆 Recommendation Engine | Recommends the better implementation                     |
+| 📈 Experiment History    | Tracks experiments during the session                    |
+| 📥 CSV Export            | Exports experiment results                               |
+| 🦙 Local LLM             | Supports local inference with Ollama                     |
+| ☁️ Streamlit Dashboard   | Interactive web application                              |
 
 ---
 
 # 📊 Benchmark Results
 
-A benchmark experiment was performed using the question:
+A benchmark experiment was performed using:
 
 > **How can I reset my password?**
 
-The baseline and optimized implementations were compared using token usage, estimated benchmark cost, and response quality.
+The results demonstrate the effect of optimization.
 
-### 🔴 Baseline vs 🟢 Optimized
+## 🔴 Baseline vs 🟢 Optimized
 
 | Metric                | 🔴 Baseline |   🟢 Optimized |
 | --------------------- | ----------: | -------------: |
@@ -85,27 +113,32 @@ The baseline and optimized implementations were compared using token usage, esti
 | Cost Reduction        |           — |     **88.23%** |
 | Quality Score         |    80 / 100 |   **90 / 100** |
 | Quality Change        |           — | **+10 points** |
-| Cache Status          |           — |           MISS |
-
-### 🏆 Benchmark Outcome
-
-The optimized implementation achieved:
-
-```text
-📉 86.96% Token Reduction
-💰 88.23% Cost Reduction
-🎯 +10 Quality Improvement
-```
-
-### Recommendation
-
-> 🟢 **RECOMMEND OPTIMIZED**
-
-The experiment demonstrated that the optimized implementation significantly reduced estimated cost and token usage while improving the measured quality score.
+| Cache                 |           — |           MISS |
 
 ---
 
-# 🧠 Optimization Pipeline
+# 🏆 Benchmark Outcome
+
+```text
+📉 Token Reduction
+86.96%
+
+💰 Cost Reduction
+88.23%
+
+🎯 Quality Improvement
++10 points
+```
+
+### Final Recommendation
+
+> 🟢 **RECOMMEND OPTIMIZED**
+
+The optimized implementation achieved a significant reduction in token usage and estimated cost while improving the measured quality score in this experiment.
+
+---
+
+# 🧠 Optimization Architecture
 
 ```text
                          👤 User Question
@@ -140,40 +173,38 @@ The experiment demonstrated that the optimized implementation significantly redu
 
 ---
 
-# ✂️ Optimization Techniques
+# ✂️ 1. Prompt Compression
 
-## 1. ✂️ Prompt Compression
+Large prompts can contain unnecessary instructions that increase token usage.
 
-Long prompts can unnecessarily increase input token usage.
-
-The optimized implementation removes redundant instructions while preserving the important requirements of the task.
+The optimized implementation simplifies the prompt while preserving the important requirements.
 
 ```text
 Long Prompt
      ↓
-Remove unnecessary instructions
+Remove Unnecessary Instructions
      ↓
 Shorter Prompt
      ↓
-Fewer Input Tokens
+Fewer Tokens
      ↓
 Lower Cost
 ```
 
 ### Benefits
 
-* 📉 Fewer input tokens
+* 📉 Lower token usage
 * 💰 Lower estimated cost
 * ⚡ Faster processing
-* 🎯 Preserved task requirements
+* 🎯 Maintains essential instructions
 
 ---
 
-## 2. 🤖 Model Routing
+# 🤖 2. Model Routing
 
-Not every user request requires the most powerful model.
+Different questions require different levels of model capability.
 
-The system can route requests according to their complexity.
+Simple requests can be handled by smaller and faster models, while complex requests can be routed to stronger models.
 
 ```text
 Simple Question
@@ -190,71 +221,47 @@ Stronger Model
 Better Reasoning
 ```
 
-The goal is to balance:
+The objective is to balance:
 
 **Cost + Speed + Quality**
 
 ---
 
-## 3. ⚡ Response Caching
+# ⚡ 3. Response Caching
 
-Repeated questions do not always require a new LLM generation.
+If the same question is asked multiple times, generating a new response every time is unnecessary.
 
-The application stores generated responses in memory and can reuse them when the same request is received again.
+The application stores responses in memory and returns the cached response when the same request appears again.
 
 ```text
-                     User Question
-                          │
-                          ▼
-                     Check Cache
-                          │
-                ┌─────────┴─────────┐
-                │                   │
-              CACHE HIT          CACHE MISS
-                │                   │
-                ▼                   ▼
-          Return Cached         Generate Response
-             Answer                   │
-                                     ▼
-                                Store Response
-                                     │
-                                     ▼
-                                Return Answer
+User Question
+      ↓
+Check Cache
+      │
+ ┌────┴────┐
+ │         │
+HIT       MISS
+ │         │
+ ▼         ▼
+Return   Generate
+Cached   Response
+Answer      │
+            ▼
+        Store Cache
 ```
 
 ### Cache Benefits
 
 * ⚡ Faster responses
-* 💰 Reduced generation cost
+* 💰 Lower generation cost
 * 📉 Avoids unnecessary token generation
-* 🚀 Improved application efficiency
-
-### Example
-
-```text
-First Request
-     ↓
-Cache MISS
-     ↓
-LLM Generation
-     ↓
-Store Response
-
-
-Same Request Again
-     ↓
-Cache HIT ⚡
-     ↓
-Return Cached Answer
-     ↓
-No New LLM Generation
-```
+* 🚀 Improves application efficiency
 
 ---
 
-# 📉 Token Reduction
+# 📉 4. Token Reduction
 
-Token usage is measured for both implementations.
+The application measures token usage for both implementations.
 
 ### Formula
 
@@ -269,21 +276,20 @@ Token Reduction (%)
 ### Benchmark
 
 ```text
-Baseline Tokens     = 736
-Optimized Tokens    = 96
+Baseline Tokens  = 736
 
-Token Reduction     = 86.96%
+Optimized Tokens = 96
+
+Token Reduction  = 86.96%
 ```
-
-This demonstrates how prompt optimization, model routing, and efficient generation can substantially reduce token usage.
 
 ---
 
-# 💰 Cost Analysis
+# 💰 5. Cost Analysis
 
-The dashboard converts recorded token usage into an estimated benchmark cost.
+The dashboard calculates estimated benchmark costs based on recorded token usage.
 
-The application provides:
+It provides:
 
 * 💵 Baseline cost
 * 💵 Optimized cost
@@ -306,6 +312,7 @@ $0.1236 / 1,000 requests
 
 ```text
 $1.0504 - $0.1236
+
 = $0.9268 saved / 1,000 requests
 ```
 
@@ -313,7 +320,7 @@ $1.0504 - $0.1236
 
 # 📅 Monthly Cost Projection
 
-The dashboard allows users to enter an expected monthly request volume.
+The dashboard allows users to enter their expected monthly request volume.
 
 ### Example
 
@@ -321,7 +328,7 @@ The dashboard allows users to enter an expected monthly request volume.
 Monthly Requests = 10,000
 ```
 
-Projected results:
+Projected result:
 
 ```text
 🔴 Baseline Monthly Cost
@@ -334,23 +341,17 @@ $1.24
 $9.27
 ```
 
-This demonstrates how relatively small savings per request can become significant when an LLM application operates at scale.
+This demonstrates how small savings per request can become significant at higher request volumes.
 
 ---
 
-# 🎯 Quality Evaluation
+# 🎯 6. Quality Evaluation
 
-Reducing cost is not useful if response quality becomes unacceptable.
+Cost reduction should not come at the expense of response quality.
 
-Therefore, the project evaluates both:
+Therefore, the project compares the quality of both implementations.
 
-```text
-💰 Cost
-     +
-🎯 Quality
-```
-
-### Benchmark Quality
+### Benchmark
 
 ```text
 🔴 Baseline Quality
@@ -363,16 +364,17 @@ Therefore, the project evaluates both:
 ### Result
 
 ```text
-Quality Change = +10 points
+🎯 Quality Change
++10 points
 ```
 
-In this experiment, optimization reduced estimated cost while improving the measured quality score.
+In this benchmark, optimization reduced estimated cost while improving the measured quality score.
 
 ---
 
 # 🏆 Recommendation Engine
 
-The application automatically evaluates the optimization trade-off.
+The application evaluates the cost-quality trade-off and generates a recommendation.
 
 For the benchmark:
 
@@ -383,24 +385,22 @@ Quality Change     → +10 points
 Monthly Saving     → $9.27
 ```
 
-### Final Recommendation
+### Recommendation
 
 ```text
 🟢 RECOMMEND OPTIMIZED
 ```
 
-The recommendation is based on the measured relationship between cost reduction and response quality.
-
 ---
 
-# 📊 Interactive Dashboard
+# 📊 Streamlit Dashboard
 
-The Streamlit dashboard provides an interactive interface for analyzing optimization experiments.
+The interactive dashboard provides several sections.
 
 ### 📈 Performance Metrics
 
-* Baseline token usage
-* Optimized token usage
+* Baseline tokens
+* Optimized tokens
 * Token reduction
 * Baseline cost
 * Optimized cost
@@ -411,26 +411,32 @@ The Streamlit dashboard provides an interactive interface for analyzing optimiza
 * Baseline quality
 * Optimized quality
 * Quality change
-* Quality/cost trade-off
+* Cost-quality trade-off
 
 ### 💰 Cost Analysis
 
 * Cost per 1,000 requests
 * Savings per 1,000 requests
 * Monthly projected cost
-* Monthly projected savings
+* Monthly savings
+
+### ⚡ Cache Analysis
+
+* Cache HIT
+* Cache MISS
+* Cached response reuse
 
 ### 📈 Experiment History
 
-Multiple experiments can be recorded during the current Streamlit session.
+Experiments can be recorded during the current Streamlit session.
 
 ---
 
 # 📥 CSV Export
 
-The application supports exporting experiment results as CSV for further analysis.
+The application allows experiment results to be exported as CSV.
 
-Exported results can include:
+Exported information can include:
 
 ```text
 Question
@@ -446,7 +452,7 @@ Quality Change
 Cache Status
 ```
 
-This makes it easier to analyze, compare, and document optimization experiments.
+This allows the results to be analyzed later using tools such as Excel or Pandas.
 
 ---
 
@@ -459,7 +465,7 @@ This makes it easier to analyze, compare, and document optimization experiments.
 | 🦙 Ollama                    | Local LLM inference          |
 | 🐼 Pandas                    | Data analysis and CSV export |
 | 🧠 LLM                       | Natural-language generation  |
-| 📊 CSV                       | Experiment result storage    |
+| 📊 CSV                       | Experiment storage           |
 | 🐙 GitHub                    | Version control              |
 | ☁️ Streamlit Community Cloud | Deployment                   |
 
@@ -467,25 +473,24 @@ This makes it easier to analyze, compare, and document optimization experiments.
 
 # 🧠 Concepts Demonstrated
 
-This project demonstrates practical understanding of:
+This project demonstrates practical knowledge of:
 
-* 🤖 Artificial Intelligence
-* 🧠 Generative AI
-* 💬 Large Language Models
-* 💰 LLM Cost Optimization
-* ✂️ Prompt Engineering
-* ✂️ Prompt Compression
-* 🤖 Model Routing
-* ⚡ Response Caching
-* 📉 Token Economics
-* 🎯 LLM Evaluation
-* 📊 Quality Measurement
-* 💰 Cost Analysis
-* 📈 Performance Optimization
-* 🐍 Python Development
-* 🎈 Streamlit Application Development
-* 🦙 Local LLM Deployment
-* ☁️ Cloud Deployment
+* Artificial Intelligence
+* Generative AI
+* Large Language Models
+* Prompt Engineering
+* Prompt Compression
+* Model Routing
+* Response Caching
+* Token Economics
+* LLM Evaluation
+* Quality Measurement
+* Cost Optimization
+* Data Analysis
+* Python Development
+* Streamlit
+* Local LLM Deployment
+* Cloud Deployment
 
 ---
 
@@ -494,6 +499,8 @@ This project demonstrates practical understanding of:
 ```text
 LLM-Cost-Optimisation/
 │
+├── 🖼️ LLM.png
+├── 📄 README.md
 ├── 📄 app.py
 ├── 📄 baseline.py
 ├── 📄 optimized.py
@@ -502,8 +509,6 @@ LLM-Cost-Optimisation/
 ├── 📄 requirements.txt
 ├── 📄 .env.example
 ├── 📄 .gitignore
-├── 🖼️ LLM.png
-├── 📄 README.md
 │
 └── 📁 data/
     └── 📄 test_questions.json
@@ -515,13 +520,13 @@ LLM-Cost-Optimisation/
 
 ### `app.py`
 
-Main Streamlit application containing:
+Main Streamlit dashboard containing:
 
 * User interface
 * Baseline vs optimized comparison
 * Cost analysis
 * Quality evaluation
-* Response caching
+* Cache handling
 * Monthly projection
 * Experiment history
 * CSV export
@@ -532,7 +537,7 @@ Contains the baseline LLM implementation used as the original benchmark.
 
 ### `optimized.py`
 
-Contains the optimized implementation using techniques such as:
+Contains the optimized LLM implementation using:
 
 * Prompt compression
 * Model routing
@@ -550,7 +555,7 @@ Calculates:
 * Benchmark cost
 * Cost reduction
 * Savings
-* Monthly projections
+* Monthly projection
 
 ### `data/test_questions.json`
 
@@ -558,25 +563,25 @@ Contains sample questions used for optimization experiments.
 
 ### `LLM.png`
 
-Project banner displayed at the top of the GitHub README.
+Banner image displayed at the top of this README.
 
 ---
 
-# 🚀 Getting Started
+# 🚀 Installation & Setup
 
-## 1️⃣ Clone the Repository
+## 1. Clone the Repository
 
 ```bash
 git clone YOUR_GITHUB_REPOSITORY_URL
 ```
 
-## 2️⃣ Open the Project
+## 2. Open the Project
 
 ```bash
 cd LLM-Cost-Optimisation
 ```
 
-## 3️⃣ Create a Virtual Environment
+## 3. Create Virtual Environment
 
 ```bash
 python -m venv .venv
@@ -588,15 +593,15 @@ python -m venv .venv
 .venv\Scripts\activate
 ```
 
-## 4️⃣ Install Dependencies
+## 4. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## 5️⃣ Install Ollama
+## 5. Setup Ollama
 
-Install Ollama and make sure the required local model is available.
+Install Ollama and make sure your required local model is available.
 
 Check installed models:
 
@@ -604,15 +609,13 @@ Check installed models:
 ollama list
 ```
 
-If required, pull your selected model using Ollama.
-
-## 6️⃣ Run the Application
+## 6. Run the Application
 
 ```bash
 python -m streamlit run app.py
 ```
 
-## 7️⃣ Open in Browser
+## 7. Open in Browser
 
 ```text
 http://localhost:8501
@@ -624,32 +627,30 @@ http://localhost:8501
 
 <p align="center">
   <a href="https://llm-cost-optimisation-r9jrfo3yrfuuqrxs9e2xhg.streamlit.app/">
-    <img src="https://img.shields.io/badge/🚀%20OPEN%20LIVE%20DEMO-Streamlit-red?style=for-the-badge&logo=streamlit" alt="Live Demo">
+    🚀 <b>Open Live Demo</b>
   </a>
 </p>
 
-**Live Application:**
-
-https://llm-cost-optimisation-r9jrfo3yrfuuqrxs9e2xhg.streamlit.app/
+🔗 https://llm-cost-optimisation-r9jrfo3yrfuuqrxs9e2xhg.streamlit.app/
 
 ---
 
 # ☁️ Deployment
 
-The project is deployed using **Streamlit Community Cloud**.
+The application is deployed using **Streamlit Community Cloud**.
 
 ```text
 🐍 Python
-    ↓
+   ↓
 🧠 LLM Application
-    ↓
+   ↓
 🎈 Streamlit
-    ↓
+   ↓
 🐙 GitHub
-    ↓
+   ↓
 ☁️ Streamlit Community Cloud
-    ↓
-🌐 Live Application
+   ↓
+🌐 Live Demo
 ```
 
 > **Note:** Local development can use Ollama for local LLM inference. Cloud deployment may require a cloud-compatible inference configuration depending on the selected model and deployment environment.
@@ -657,8 +658,6 @@ The project is deployed using **Streamlit Community Cloud**.
 ---
 
 # 🎯 Project Objectives
-
-The main objectives of this project are to:
 
 * 💰 Reduce LLM inference costs
 * 📉 Reduce unnecessary token usage
@@ -668,51 +667,23 @@ The main objectives of this project are to:
 * 🎯 Measure response quality
 * 📊 Compare baseline and optimized implementations
 * 📅 Project savings at scale
-* 🏆 Generate data-driven optimization recommendations
-* 🚀 Build a practical Generative AI project
-
----
-
-# 💡 Key Takeaway
-
-> **LLM optimization is not simply about using a cheaper model.**
-
-A practical optimization strategy combines:
-
-```text
-✂️ Better Prompts
-       +
-🤖 Smarter Model Selection
-       +
-⚡ Response Caching
-       +
-📉 Fewer Tokens
-       +
-🎯 Quality Evaluation
-       ↓
-💰 Lower Cost + Better Efficiency
-```
-
-The goal is to achieve the best possible balance between:
-
-**Cost + Quality + Speed**
+* 🏆 Generate data-driven recommendations
+* 🚀 Build an interview-ready Generative AI project
 
 ---
 
 # 🔮 Future Improvements
 
-Possible future enhancements include:
-
-* 🤖 Support for additional LLM providers
-* 🧠 More advanced model-routing strategies
+* 🤖 Support additional LLM providers
+* 🧠 Advanced model-routing strategies
 * 💬 Conversational memory
 * 📊 Automated benchmark datasets
-* 🎯 Human evaluation alongside automated scoring
+* 🎯 Human evaluation
 * 📈 Statistical experiment analysis
 * 🗄️ Persistent experiment database
-* 🔍 More sophisticated prompt optimization
+* 🔍 Advanced prompt optimization
 * ⚡ Distributed caching
-* 📊 Real-time LLM cost monitoring
+* 📊 Real-time cost monitoring
 * 🔐 Authentication and user management
 * 🚀 Production-scale deployment
 
@@ -724,9 +695,7 @@ Possible future enhancements include:
 
 **AI/ML Engineer | Python Developer | Generative AI Enthusiast**
 
-I am a Bachelor of Science in Artificial Intelligence student interested in building practical AI and Generative AI applications using Python.
-
-My interests include developing intelligent systems involving Machine Learning, Generative AI, Large Language Models, RAG, NLP, Computer Vision, and AI application development.
+I am a Bachelor of Science in Artificial Intelligence student passionate about building practical AI, Machine Learning, Generative AI, NLP, and Python applications.
 
 ### Areas of Interest
 
@@ -746,7 +715,7 @@ My interests include developing intelligent systems involving Machine Learning, 
 
 ### 💻 GitHub
 
-<a href="https://github.com/Tehmina124">
+<a href="https://github.com/Tehminaanwar543">
   <img src="https://img.shields.io/badge/GitHub-Profile-black?style=for-the-badge&logo=github" alt="GitHub">
 </a>
 
@@ -758,7 +727,7 @@ My interests include developing intelligent systems involving Machine Learning, 
 
 ### 🌐 Portfolio
 
-<a href="https://tehmina-portfolio.vercel.app/">
+<a href="https://tehmina-portfolio-five.vercel.app/">
   <img src="https://img.shields.io/badge/Portfolio-Website-purple?style=for-the-badge" alt="Portfolio">
 </a>
 
@@ -767,8 +736,6 @@ My interests include developing intelligent systems involving Machine Learning, 
 # ⭐ Support
 
 If you found this project useful, consider giving the repository a ⭐ **Star**.
-
-It helps support the project and encourages further development.
 
 ---
 
