@@ -1,19 +1,95 @@
 import re
-import ollama
 
 
 def estimate_tokens(text):
-    """Approximate token count for local cost analysis."""
+    """
+    Approximate token count for local cost analysis.
+    This is an estimation, not an actual tokenizer.
+    """
     words = len(re.findall(r"\S+", text))
     return max(1, int(words * 1.3))
 
 
+def generate_local_response(question):
+    """
+    Local demonstration response.
+
+    This replaces the Ollama dependency so the application
+    can run on Streamlit Cloud without requiring a local
+    Ollama server.
+    """
+
+    question_lower = question.lower()
+
+    if any(word in question_lower for word in [
+        "refund",
+        "return",
+        "money back"
+    ]):
+        answer = (
+            "For a refund request, please provide your order "
+            "details and explain the reason for the refund. "
+            "The request can then be reviewed according to "
+            "the applicable refund policy."
+        )
+
+    elif any(word in question_lower for word in [
+        "payment",
+        "pay",
+        "card",
+        "billing"
+    ]):
+        answer = (
+            "For payment-related questions, please verify that "
+            "your payment information is correct and that your "
+            "payment method is active. If the issue continues, "
+            "check the transaction details or contact customer "
+            "support for further assistance."
+        )
+
+    elif any(word in question_lower for word in [
+        "shipping",
+        "delivery",
+        "order"
+    ]):
+        answer = (
+            "For shipping or order-related questions, please "
+            "check your order status and tracking information. "
+            "Delivery times may vary depending on the selected "
+            "shipping method and destination."
+        )
+
+    elif any(word in question_lower for word in [
+        "hello",
+        "hi",
+        "hey"
+    ]):
+        answer = (
+            "Hello! I am your customer support assistant. "
+            "Please ask me about orders, payments, refunds, "
+            "shipping, or other customer support topics."
+        )
+
+    else:
+        answer = (
+            f"Thank you for your question: \"{question}\". "
+            "For this demonstration, the system analyzes the "
+            "request locally and provides a simulated customer "
+            "support response. In a production environment, "
+            "this component could be connected to an LLM API."
+        )
+
+    return answer
+
+
 def baseline_answer(question):
     """
-    Baseline Generative AI implementation.
+    Baseline implementation.
 
-    Uses Gemma 3 with a longer prompt.
-    This represents the original, less-optimized version.
+    Uses a deliberately longer prompt to represent the
+    original, less-optimized implementation.
+
+    No external API or Ollama server is required.
     """
 
     prompt = f"""
@@ -41,23 +117,13 @@ Please provide a detailed and helpful response.
 
     input_tokens = estimate_tokens(prompt)
 
-    response = ollama.chat(
-        model="gemma3",
-        messages=[
-            {
-                "role": "user",
-                "content": prompt
-            }
-        ]
-    )
-
-    answer = response["message"]["content"]
+    answer = generate_local_response(question)
 
     output_tokens = estimate_tokens(answer)
 
     return {
         "answer": answer,
-        "model": "Gemma 3 - Baseline",
+        "model": "Local Demo - Baseline",
         "input_tokens": input_tokens,
         "output_tokens": output_tokens,
         "total_tokens": input_tokens + output_tokens,
