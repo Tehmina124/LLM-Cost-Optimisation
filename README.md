@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="LLM" width="100%" alt="LLM Cost Optimisation Study">
+  <img src="./LLM" width="100%" alt="LLM Cost Optimisation Study Banner">
 </p>
 
 <h1 align="center">💰 LLM Cost Optimisation Study</h1>
